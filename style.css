@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 table {
     border-collapse: collapse;
@@ -9,6 +9,21 @@ td,th {
     border: solid black 1px;
     padding: 0.5rem;
 }
-th {
-    background: lightgrey;
+td {
+    min-width: 2rem;
+}
+.header-row {
+    background: #aaa;
+}
+tr:not(.header-row) > *:nth-child(even){
+    background: #ddd;
+}
+tr > *:nth-child(1) {
+    width: 10rem;
+}
+tr > *:nth-child(2) {
+    width: 12rem;
+}
+.how-to-text {
+    font-weight: normal;
 }

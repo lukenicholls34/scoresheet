@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoresheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table id="scoresheet">
-        <tr>
-            <th>Upper section</th>
-            <th>How to score</th>
-            <th>Game #1</th>
-            <th>Game #2</th>
-            <th>Game #3</th>
-            <th>Game #4</th>
-            <th>Game #5</th>
-            <th>Game #6</th>
+    <table class="upper-section">
+        <tr class="header-row">
+            <th>UPPER SECTION</th>
+            <th>HOW TO SCORE</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
             <th>Aces</th>
-            <td>Count and add only aces</td>
+            <th class="how-to-text">Count and add only aces</th>
             <td></td>
             <td></td>
             <td></td>
@@ -30,7 +33,7 @@
         </tr>
         <tr>
             <th>Twos</th>
-            <td>Count and add only twos</td>
+            <th class="how-to-text">Count and add only twos</th>
             <td></td>
             <td></td>
             <td></td>
@@ -40,7 +43,7 @@
         </tr>
         <tr>
             <th>Threes</th>
-            <td>Count and add only threes</td>
+            <th class="how-to-text">Count and add only threes</th>
             <td></td>
             <td></td>
             <td></td>
@@ -50,7 +53,7 @@
         </tr>
         <tr>
             <th>Fours</th>
-            <td>Count and add only fours</td>
+            <th class="how-to-text">Count and add only fours</th>
             <td></td>
             <td></td>
             <td></td>
@@ -60,7 +63,7 @@
         </tr>
         <tr>
             <th>Fives</th>
-            <td>Count and add only fives</td>
+            <th class="how-to-text">Count and add only fives</th>
             <td></td>
             <td></td>
             <td></td>
@@ -70,7 +73,7 @@
         </tr>
         <tr>
             <th>Sixes</th>
-            <td>Count and add only sixes</td>
+            <th class="how-to-text">Count and add only sixes</th>
             <td></td>
             <td></td>
             <td></td>
@@ -78,9 +81,9 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
-            <th>Total score</th>
-            <td></td>
+        <tr class="header-row">
+            <th>Total</th>
+            <th></th>
             <td></td>
             <td></td>
             <td></td>
@@ -90,7 +93,7 @@
         </tr>
         <tr>
             <th>Bonus</th>
-            <td>If score is more than or equal to 63, score 35</td>
+            <th class="how-to-text">Score 35</th>
             <td></td>
             <td></td>
             <td></td>
@@ -98,9 +101,9 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
-            <th>Total</th>
-            <td></td>
+        <tr class="header-row">
+            <th>Total score</th>
+            <th></th>
             <td></td>
             <td></td>
             <td></td>
@@ -108,12 +111,15 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
-            <th colspan="8">Lower section</th>
+    </table>
+    <br>
+    <table class="lower-section">
+        <tr class="header-row">
+            <th>LOWER SECTION</th>
         </tr>
         <tr>
             <th>3 of a kind</th>
-            <td>Add total of all dice</td>
+            <th class="how-to-text">Add total of all dice</th>
             <td></td>
             <td></td>
             <td></td>
@@ -123,7 +129,7 @@
         </tr>
         <tr>
             <th>4 of a kind</th>
-            <td>Add total of all dice</td>
+            <th class="how-to-text">Add total of all dice</th>
             <td></td>
             <td></td>
             <td></td>
@@ -133,7 +139,7 @@
         </tr>
         <tr>
             <th>Full house</th>
-            <td>Score 25</td>
+            <th class="how-to-text">Score 25</th>
             <td></td>
             <td></td>
             <td></td>
@@ -143,7 +149,7 @@
         </tr>
         <tr>
             <th>Small straight</th>
-            <td>Score 30</td>
+            <th class="how-to-text">Score 30</th>
             <td></td>
             <td></td>
             <td></td>
@@ -153,7 +159,7 @@
         </tr>
         <tr>
             <th>Large straight</th>
-            <td>Score 40</td>
+            <th class="how-to-text">Score 40</th>
             <td></td>
             <td></td>
             <td></td>
@@ -163,7 +169,7 @@
         </tr>
         <tr>
             <th>5 of a kind</th>
-            <td>Score 50</td>
+            <th class="how-to-text">Score 50</th>
             <td></td>
             <td></td>
             <td></td>
@@ -173,7 +179,7 @@
         </tr>
         <tr>
             <th>Chance</th>
-            <td>Add total of all dice</td>
+            <th class="how-to-text">Add total of all dice</th>
             <td></td>
             <td></td>
             <td></td>
@@ -181,9 +187,9 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="header-row">
             <th>Total of lower section</th>
-            <td></td>
+            <th></th>
             <td></td>
             <td></td>
             <td></td>
@@ -193,7 +199,7 @@
         </tr>
         <tr>
             <th>Total of upper section</th>
-            <td></td>
+            <th></th>
             <td></td>
             <td></td>
             <td></td>
@@ -201,9 +207,9 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="header-row">
             <th>Grand total</th>
-            <td></td>
+            <th></th>
             <td></td>
             <td></td>
             <td></td>
